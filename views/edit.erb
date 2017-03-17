@@ -1,0 +1,24 @@
+<h2>Edit Sneaker</h2>
+
+<form action="/sneakers/<%= @sneaker.id %>" method="post">
+  <input type="hidden" name="_method" value="put">
+
+  <label name=""></label>
+  <input type="text" required name="name" value="" placeholder="Enter brand name">
+
+  <label for=""></label>
+  <input type="type" required name="img_url" value="" placeholder="Image_url">
+
+  <label for=""></label>
+  <input type="type" required name="size" value="" placeholder="Size">
+
+  <label for="">$ </label>
+  <input type="number" required name="price" min="1" max="99999" placeholder="$Price">
+
+  <button>Update</button> 
+
+</form>
+
+<form action="/" method="get">
+  <button>Cancel</button
+</form>

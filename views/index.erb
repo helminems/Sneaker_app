@@ -1,0 +1,17 @@
+
+<h1>$neaker Pimp$</h1>
+
+<h3><a href="/sneakers/new"> Upload $neaker$ </a></h3>
+<h3><a href="/search"> Search $neaker$ </a></h3>
+
+<% @sneakers.each do |sneaker| %>
+  <img class="sneakers" src="<%= sneaker['img_url'] %>" alt="" />
+
+  <h3>
+    <a href="/sneakers/<%= sneaker['id'] %>"> <%= sneaker['name'] %>
+    Size: <%= sneaker['size'] %>
+    Price: $<%= sneaker['price'] %>
+    </a>
+  </h3>
+
+<% end %>

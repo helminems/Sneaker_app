@@ -1,0 +1,14 @@
+<% @sneakers.each do |sneaker| %>
+  <div><img src="<%= sneaker['img_url'] %>" alt="" ></div>
+
+  <h3>
+    <a href="/sneakers/<%= sneaker['id'] %>"> <%= sneaker['name'] %>
+    Size: <%= sneaker['size'] %>
+    Price: $<%= sneaker['price'] %>
+    </a>
+  </h3>
+<% end %>
+
+<form action="/" method="get">
+  <button>Cancel</button
+</form>

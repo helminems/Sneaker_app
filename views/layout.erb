@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>$neaker Pimp$</title>
+
+  <link rel='stylesheet' href='/stylesheets/main.css'>
+</head>
+
+<body>
+
+  <% if logged_in? %>
+    <p style="color: blue;font-size: 120%">Welcome <%= current_user.name %></p>
+    <form action="/session" method="post">
+      <input type="hidden" name="_method" value="delete">
+      <button>Logout</button>
+    </form>
+  <% end %>
+
+  <!-- session: <%= session[:user_id] %> -->
+  <%= yield %>
+
+</body>

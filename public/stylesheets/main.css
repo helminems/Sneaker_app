@@ -1,0 +1,109 @@
+.sneakers {
+  width: 50%;
+}
+
+
+body {
+  background-image: url("/images/sneakerbg3.jpg");
+  text-align: center;
+  background-size: 100%;
+  overflow: auto;
+}
+
+h1 {
+  color: gold;
+  background-color: white;
+  font-size: 350%;
+  font-weight: bold;
+  background-size: cover;
+}
+
+h2 a{
+  color: red;
+  padding: 10px;
+  background-color: white;
+
+}
+
+h3 a{
+  color: red;
+  padding: 10px;
+  background-color: white;
+  opacity: 0.8;
+  font-weight: bold;
+  opacity: 0.8;
+    filter: alpha(opacity=50);
+}
+
+h3 a:hover{
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+button {
+  font-size: 16px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    margin: auto;
+}
+
+button:hover {
+  background-color: red; /* Green */
+  color: white;
+}
+
+h2 {
+  color: red;
+  padding: 10px;
+  background-color: white;
+  opacity: 0.85;
+}
+
+.comment .label {
+  background-color: white;
+}
+
+p {
+  color: yellow;
+}
+
+.edit {
+  display: inline-block;
+  font: bold 14px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+  right: 20px;
+}
+
+.comment {
+  display: inline-block;
+  font: bold 12px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+  margin: auto;
+}
+
+.signup {
+  display: inline-block;
+  font: bold 12px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}

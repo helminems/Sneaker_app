@@ -1,0 +1,40 @@
+<h1>$neaker Pimp$</h1>
+<h2><%= @sneaker.name %>  Size:<%= @sneaker.size %>  Price:$ <%= @sneaker.price %></h2>
+
+<img src="<%= @sneaker.img_url %>" alt="" />
+
+<form action="/sneakers/<%= @sneaker.id %>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <button>Delete</button>
+</form>
+
+<% if logged_in? %>
+  <form action="/sneakers/<%= @sneaker.id %>/edit" method="get">
+    <input type="hidden" required name="_method" value="edit">
+    <button>Edit</button>
+   <!-- <div class="edit">
+      <a href="/sneakers/<%= @sneaker.id %>/edit" class="edit_button"> Edit </a>
+   </div> -->
+ </form>
+
+
+<form action="/" method="get">
+  <button>Cancel</button
+</form>
+
+
+<hr>
+<% end %>
+
+<% @comments.each do |comment| %>
+  <div class="comment"><%= comment.body %> by <%= comment.user.name %></div>
+  <hr>
+<% end %>
+  <% if logged_in? %>
+    <form action="/comments" method="post">
+      <input type="hidden" required name="sneaker_id" value="<%= @sneaker.id %>">
+      <textarea name="body"></textarea>
+      <hr>
+      <button>Post</button>
+    </form>
+ <% end %>
